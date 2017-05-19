@@ -1,16 +1,15 @@
 'use strict';
 module.exports = function() {
 
-var key;
-var value;
+var vault = {};
 
 function setValue(key,value){
-  key=key;
-  value=value;
+  vault.key=key;
+  vault.value=value;
   }
 function getValue(key){
-  if(key){
-    return value;
+  if(vault.key){
+    return vault.value;
   }
   else{
     return null;
